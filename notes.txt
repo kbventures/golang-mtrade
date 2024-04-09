@@ -1,0 +1,45 @@
+// Initialize golang project
+go mod init github.com/YOUR_GITHUB_USERNAME/golang-gorm-postgres
+
+// Install viper 
+go get github.com/spf13/viper
+
+
+// Install gormgo get -u gorm.io/gorm  
+go get -u gorm.io/gorm  
+go get gorm.io/driver/postgres
+
+// Install UUID OSSP Module for Postgresql
+docker exec -it golang-postgres bash
+psql -U admin golang-gorm
+
+//Start the Docker Container:
+docker-compose up -d
+
+//Access the Bash Shell of the Container:
+docker exec -it go-postgres bash
+
+// Connect as the default superuser 'postgres'
+psql -U postgres  
+
+// List All available extensions
+select * from pg_available_extensions;
+
+// Install the uuid-ossp extension
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+// Create go-postgres database
+CREATE DATABASE gopostgresdb;
+
+
+// Auto migrate
+go run migrate/migrate.go
+
+// Golang Server: Gin Tonic
+go get github.com/gin-gonic/gin
+go install github.com/cosmtrek/air@latest
+
+// Golang Gin Server
+go get -u github.com/cosmtrek/air
+air
+
