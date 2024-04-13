@@ -43,3 +43,17 @@ go install github.com/cosmtrek/air@latest
 go get -u github.com/cosmtrek/air
 air
 
+
+
+
+
+
+app.env original:
+POSTGRES_HOST=127.0.0.1
+POSTGRES_USER=postgresuser
+POSTGRES_PASSWORD=Fuckthis22@@@
+POSTGRES_DB=gopostgresdb
+POSTGRES_PORT= 6500
+PORT=8000
+CLIENT_ORIGIN=HTTP://localhost:3000
+

@@ -1,3 +1,4 @@
+# Use the .yml file in main next.js project instead
 services:
   golang-postgres:
     image: postgres:13.3
