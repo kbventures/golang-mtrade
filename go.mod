@@ -52,6 +52,7 @@ require (
 	github.com/jackc/pgx/v5 v5.5.3 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
+	github.com/lib/pq v1.10.9
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mitchellh/mapstructure v1.5.1-0.20231216201459-8508981c8b6c // indirect
 	github.com/pelletier/go-toml/v2 v2.2.0 // indirect
